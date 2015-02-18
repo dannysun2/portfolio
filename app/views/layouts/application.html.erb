@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Danny Sun - Web Developer</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+
+<div class='top'>
+<div class='container-fluid header'>
+   <div class='icons'>
+   <i class="fa fa-twitter"></i>
+   <i class="fa fa-facebook-square"></i>
+   <i class="fa fa-instagram"></i>
+   <i class="fa fa-linkedin"></i>
+</div>
+   <div class='contact'>
+      <i class="fa fa-inbox fa-3x" title="This is my div's tooltip message!"></i>
+   </div>
+</div>
+
+<div class='container-fluid first'>
+   <div class='col-md-12 text-center'>
+   <h1><mark>Hello World,</mark> I'm Danny<h1>
+      <p>developer/designer/webenthusiast</p>
+   </div>
+</div>
+</div>
+
+<body>
+<div class='container-fluid second'>
+   <div class='col-md-12 text-center'>
+      <h1>Featured Work</h1>
+      <em>dive into my creations</em>
+   <%= yield %>
+</div>
+</div>
+
+
+
+   <div class='container-fluid'>
+      <div class='row col-md-offset-2'>
+         <div class="col-md-3">
+           <div class="thumbnail">
+             <img src="">
+             <div class="caption">
+               <h3>Pinterest</h3>
+               <p>Post anything of interest!</p>
+               <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+             </div>
+           </div>
+         </div>
+
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="">
+          <div class="caption">
+            <h3>Meet.me</h3>
+            <p>Designed to facilitate the meeting between two people!</p>
+            <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+          </div>
+        </div>
+      </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img src="">
+      <div class="caption">
+        <h3>Chirpster</h3>
+        <p>Designed using Ruby on Rails</p>
+        <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+      </div>
+    </div>
+  </div>
+      </div>
+</div>
+
+</body>
+</html>
