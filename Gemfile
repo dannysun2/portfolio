@@ -43,3 +43,4 @@ end
 
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'rails_12factor'
