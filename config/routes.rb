@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  get 'pins/index'
+
+  get 'pins/show'
+
+  get 'users/index'
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'welcome#index'
 
-  get 'welcome/show'
+  resources :projects
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

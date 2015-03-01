@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$( document ).ready(function() {
+   $.jGrowl("Let's Chat! <br><a href=mailto:danny.sun@me.com>Email Me</a> or 972.922.9312", { life: 100000 });
+});

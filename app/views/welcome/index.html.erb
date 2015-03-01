@@ -1,1 +1,25 @@
-
+<div class='container-fluid second'>
+   <div class='col-md-12 text-center'>
+      <h1>Featured Work</h1>
+      <em>dive into my creations</em>
+</div>
+</div>
+   <div class='container-fluid'>
+      <div class='row col-md-offset-2 col-sm-offset-1'>
+         <% @projects.each do |project| %>
+         <div class="col-md-5 col-sm-10">
+           <div class="thumbnail box">
+             <%= image_tag project.photo.thumb %>
+             <div class="caption">
+               <h3><%= project.title %></h3>
+               <p><%= simple_format(project.desc) %>
+               <p>
+             <%= link_to "Demo", project.demo, class: "btn btn-primary", role:"button" %>
+             <%= link_to "Github", project.github, class: "btn btn-default", role:"button" %>
+          </p>
+             </div>
+           </div>
+         </div>
+         <% end %>
+   </div>
+</div>

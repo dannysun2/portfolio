@@ -5,75 +5,48 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.1/jquery.jgrowl.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.1/jquery.jgrowl.min.js"></script>
 </head>
 
 <div class='top'>
 <div class='container-fluid header'>
-   <div class='icons'>
-   <i class="fa fa-twitter"></i>
-   <i class="fa fa-facebook-square"></i>
-   <i class="fa fa-instagram"></i>
-   <i class="fa fa-linkedin"></i>
-</div>
-   <div class='contact'>
-      <i class="fa fa-inbox fa-3x" title="This is my div's tooltip message!"></i>
-   </div>
+<p class='text-center'>Home Blog Contact</p>
 </div>
 
 <div class='container-fluid first'>
    <div class='col-md-12 text-center'>
-   <h1><mark>Hello World,</mark> I'm Danny<h1>
+   <h1><mark>Hello World</mark><h1>
       <p>developer/designer/webenthusiast</p>
    </div>
 </div>
 </div>
-
-<body>
-<div class='container-fluid second'>
-   <div class='col-md-12 text-center'>
-      <h1>Featured Work</h1>
-      <em>dive into my creations</em>
-   <%= yield %>
-</div>
-</div>
-
-
-
-   <div class='container-fluid'>
-      <div class='row col-md-offset-2'>
-         <div class="col-md-5">
-           <div class="thumbnail box">
-             <img src="https://raw.githubusercontent.com/dannysun725/portfolio/master/app/assets/images/pinterest.png">
-             <div class="caption">
-               <h3>Pinterest</h3>
-               <ul class='list-unstyled'>
-               <li><p>Designed using Ruby on Rails & Javascript</p></li>
-               <li><p>Bootstrap 3.0 / JQuery</p></li>
-               <li><p>User Authentication</p></li>
-               <li><p>Pagination</p></li>
-               </ul>
-               <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
-             </div>
-           </div>
-         </div>
-
-  <div class="col-md-5">
-    <div class="thumbnail box">
-      <img src="https://raw.githubusercontent.com/dannysun725/portfolio/master/app/assets/images/chirpster.png">
-      <div class="caption">
-        <h3>Chirpster</h3>
-        <ul class='list-unstyled'>
-        <li><p>Designed using Ruby on Rails</p></li>
-        <li><p>Bootstrap 3.0</p></li>
-        <li><p>User Authentication</p></li>
-        <li><p>Pagination</p></li>
-        </ul>
-        <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
-      </div>
-    </div>
-  </div>
-      </div>
-</div>
-
+<%= yield %>
 </body>
+
+<div class='container-fluid footer'>
+   <div class='col-md-2 col-md-offset-1'>
+      <h2>Social</h2>
+      <ul class='list-unstyled'>
+         <li>Twitter</li>
+         <li>LinkedIn</li>
+         <li>Medium</li>
+      </ul>
+   </div>
+   <div class='col-md-5'>
+      <h2>Recent Blog Posts</h2>
+      <h3>Two in one day?</h3>
+
+<p>I guess this is microblogging-esque? I know I have a lot to catch up on and these are just a few of the things I’m working on or will be working on in the coming days/weeks…</p>
+   </div>
+   <div class='col-md-3'>
+      <h2>About Me</h2>
+      <p>I love <b>building</b> things. I need nothing more than
+          <s>a little</s> A LOT of caffeine, the occasional
+          restroom break, and most importantly a canvas, in which is best known as the web.</p>
+      <p><a href='mailto:danny.sun@me.com'>Email Me</a> | Reach me at 972.922.9312
+
+   </div>
+
+</div>
 </html>
