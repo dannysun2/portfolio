@@ -12,4 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bxslider
 //= require_tree .
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});

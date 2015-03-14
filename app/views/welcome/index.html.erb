@@ -1,22 +1,17 @@
+<% @projects.each do |project| %>
 
-   <div class='container-fluid'>
-
-         <% @projects.each do |project| %>
-         <div class='row'>
-         <div class="col-md-7">
-           <div class="thumbnail box">
-             <%= image_tag project.photo.thumb, class: 'img-responsive' %>
-          </div>
+<li>
+   <article class="caption">
+   <%= image_tag project.photo, class: 'class__media' %>
+       <div class="caption__overlay">
+         <h1 class="caption__overlay__title"><%= project.title %></h1>
+        <p class="caption__overlay__content"><%= simple_format(project.desc) %></p>
+        <br>
+        <div class='text-center'>
+           <%= link_to "Demo", project.demo %>
+           <%= link_to "GitHub", project.github %></div>
        </div>
-             <div class="col-md-4">
-               <h3><%= project.title %></h3>
-               <p><%= simple_format(project.desc) %>
-               <p>
-             <%= link_to "Demo", project.demo, class: "btn btn-primary", role:"button" %>
-             <%= link_to "Github", project.github, class: "btn btn-default", role:"button" %>
-          </p>
-             </div>
-      </div>
-         <% end %>
+    </article>
+</li>
 
-</div>
+<% end %>

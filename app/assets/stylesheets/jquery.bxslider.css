@@ -1,0 +1,5 @@
+
+.bx-wrapper .bx-next {
+	right: 20px;
+	background: <%= image_tag "controls.png" %>  no-repeat -43px -32px;
+}

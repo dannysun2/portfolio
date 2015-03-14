@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-     @projects = Project.last(2)
+     @projects = Project.order('id desc')
   end
 
   def show

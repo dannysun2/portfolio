@@ -29,30 +29,64 @@
    <p>dive into my creations</p>
 </div>
 </div>
-<br><br><br>
 
+<div class='row'>
+<div class="col-md-8 col-md-offset-2">
+   <ul class="bxslider">
+     <%= yield %>
+</ul>
+   </div>
+</div>
 
-
-<br><br><br><br><br><br><br><br><br><br><br>
 <div class='row no-gutter'>
    <div class='quote text-center'>
       <div class='col-md-offset-2 col-md-8'>
-      <p>I love <b>building</b> things. I need nothing more than a <s>little</s> A LOT of caffeine, occasional restroom breaks, and most importantly a canvas, in which is best known as the web.</p>
+      <p>I love <b>building</b> things. I need nothing more than a <s>little</s> A LOT of caffeine, occasional restroom breaks, and most importantly a canvas, in which is better known as the web.</p>
    </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div class='row no-gutter'>
+   <div class='about text-center'>
+      <div class='col-md-offset-2 col-md-8'>
+      <h1>About Danny</h1>
+      <h2>Hello! I'm Danny Sun, a developer currently residing in <mark>Houston</mark>, Texas. I have an insatiable desire for all things web development. It began in my younger years involving lego building blocks, where I found my passion for engineering.</h2>
+   </div>
+
+<div class='col-md-offset-3 col-md-6'>
+   <div class='about-section'>
+      <p class='text-justify'>Throughout my adolescence, I found myself investing my weekends building websites with Geocities/Angelfire/Homestead WYSIWYG editors when that was a thing. As inquisitive as one could be, I decided to experiment with various graphic design programs and eventually became proficient with Adobe Photoshop. I acquired some sense of design theory outside of flaming GIFs and embedding cool Flash effects.</p>
+
+      <p class='text-justify'>I went on to graduate from the <mark>University of Houston</mark> with a degree in Management Information Systems in the Fall of 2013. It was through the program that I had rekindled my love for HTML/CSS and was introduced to the world of Javascript and Server-Side Programming (Classic ASP).</p>
+
+      <p class='text-justify'><b>Present Day.</b> I elected to enroll in Houston's Iron Yard Bootcamp to further my discipline. In the three months that I've invested, I can confidently say that I'm a better developer than I was prior. I hope to utilize the skillset that I've gained from these past years to create beautiful apps for the world to see.</p>
+
+      <p><b>I am currently available for hire, so let's build beautiful things together!</b></p>
+   </div>
+</div>
+</div>
+</div>
+
 <div class='row no-gutter'>
    <div class='footer text-center'>
-
-         <h1>Social Presence</h1>
-         <p>let's get connected</p>
-         <ul class='list-inline footer-icons'>
-            <li><%= image_tag "icon-linkedin.jpg" %></li>
-            <li><%= image_tag "icon-twitter.jpg" %></li>
-            <li><%= image_tag "icon-github.jpg" %></li>
-            <li><%= image_tag "icon-mail.jpg" %></li>
-            <ul>
-      <h1>
+      <h1>Social Presence</h1>
+        <p>let's get connected</p>
+        <ul class='list-inline footer-icons'>
+           <li><%= link_to 'http://www.linkedin.com/in/dannysun2' do %>
+             <%= image_tag "icon-linkedin.jpg" %>
+             <% end %></li>
+             <li><%= link_to 'http://www.twitter.com/thedannysun' do %>
+              <%= image_tag "icon-twitter.jpg" %>
+              <% end %></li>
+              <li><%= link_to 'https://github.com/dannysun725' do %>
+               <%= image_tag "icon-github.jpg" %>
+               <% end %></li>
+               <li><%= link_to 'mailto:danny.sun@me.com' do %>
+               <%= image_tag "icon-mail.jpg" %>
+               <% end %></li>
+        </ul>
    </div>
 </div>
+</div>
+
 </html>
